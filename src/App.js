@@ -43,20 +43,18 @@ export default class App1 extends React.Component {
   render () {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1>{process.env.REACT_APP_APP_TITTLE}</h1>
-          <div>
-            <input type= "number" id= "n1" onChange= {this.handleNumberChange}/>
-            <input type= "number" id= "n2" onChange= {this.handleNumberChange}/>
-          </div>
-          
-          <form onSubmit= {this.handleChangeResult}>
-            <Sum /><br/>
-          </form>
-          <div className= "result">
-            {this.state.result}
-          </div>
-        </header>
+        <h1>{process.env.REACT_APP_APP_TITTLE}</h1>
+        <div>
+          <input type= "number" id= "n1" onChange= {this.handleNumberChange}/>
+          <input type= "number" id= "n2" onChange= {this.handleNumberChange}/>
+        </div>
+        
+        <form onSubmit= {this.handleChangeResult}>
+          <Sum /><br/>
+        </form>
+        <div className= "result">
+          {this.state.result}
+        </div>
       </div>
     )
   }
