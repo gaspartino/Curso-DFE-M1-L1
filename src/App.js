@@ -14,13 +14,8 @@ export default class App1 extends React.Component {
     super()
 
     this.state = {
-      numbers: [
-        {
-          n1: '',
-          n2: ''
-        }
-      ],
-
+      n1: '',
+      n2: '',
       result: "Resultado"
     }
     this.handleChangeResult = this.handleChangeResult.bind(this);
